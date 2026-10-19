@@ -1,0 +1,15 @@
+meta:
+  environment: node
+  toolchain:
+    name: npm
+    version: 22
+
+build:
+  # Только сборка Next.js. Таблицы в базе создаются отдельно,
+  # после первого запуска (Консоль -> npx drizzle-kit push --force),
+  # потому что на этапе сборки переменной DATABASE_URL ещё нет.
+  additionalCommands: npm run build
+
+run:
+  command: npm run start
+  containerPort: 3000

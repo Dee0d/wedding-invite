@@ -1,0 +1,21 @@
+# Зависимости и артефакты сборки — не заливаем на Amvera
+node_modules/
+.next/
+out/
+
+# Секреты и локальные настройки
+.env
+.env.local
+.env.*.local
+
+# Служебное
+.DS_Store
+*.log
+npm-debug.log*
+.vercel
+
+# Архив для загрузки через интерфейс Amvera
+amvera-upload.zip
+
+# Исходники фото (не заливаем на хостинг)
+.photo-source/
